@@ -33,11 +33,11 @@ ResultsFile	costs.txt
 
 * Temperatura początkowa
 
-T	1.5
+T	3
 
 * "Stała czasowa" zmian temperatury.
 
-a	0.9
+a	0.8
 
 * Liczba uruchomień symulowanego odprężania.
 * Za każdym razem losowany jest nowy początkowy podział zbioru
@@ -49,7 +49,7 @@ p	1
 
 * Liczba zmian temperatury
 
-N  200
+N  300
 
 * Liczba prób (!) zamiany wierzchołków przy stałej temperaturze
 

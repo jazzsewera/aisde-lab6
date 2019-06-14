@@ -46,7 +46,8 @@ double cool2(double Tstart, double Tstop, int i, int N) {
 // ZWRACANA TEMPERATURA POWINNA BYĆ DODATNIA.
 // LISTA ARGUMENTÓW MOŻE BYĆ OCZYWIŚCIE ZMODYFIKOWANA.
 double cool3(double Tstart, double Tstop, int i, int N) {
-	return (Tstart * pow(0.5, i));
+	//return (Tstart * pow(0.9, i));
+  return (log(Tstart - i*(Tstart-Tstop)/static_cast<double>(N) + 1));
 }
 
 double cool4() {

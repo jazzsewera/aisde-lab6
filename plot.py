@@ -12,6 +12,9 @@ except Exception:
 
 
 def save_plot(ax, name='plot', const_temp=False):
+    with open('costs.txt', 'r') as cost_file:
+        cost = int(cost_file.read())
+    plt.title('Final cost: {0}'.format(cost))
     if not const_temp:
         ax.set_xscale('log')
         plt.xlabel('Temperature')
