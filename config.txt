@@ -1,0 +1,56 @@
+*** Plik konfiguracyjny programu OPTIM ***
+
+* Nazwa pliku z opisem grafu
+
+GraphFile	graf.txt
+
+* Czy algorytm Kernighana-Lina ma wyświetlać wyniki elementarnych operacji?
+* Dozwolone wartości to T(ak) i N(ie).
+
+KernighanLinDetails N
+
+* Ile razy wywołać algorytm Kernighana-Lina? Każde kolejne wywołanie
+* tego algorytmu pracuje na grafie podzielonym w poprzedniej iteracji.
+
+KernighanLinRuns 1
+
+* Nazwa pliku wynikowego zawierającego wartości przyjmowane przez
+* funkcję celu w kolejnych krokach algorytmu symulowanego odprężania.
+
+ValuesFile	cooling.csv
+
+* Format pliku wynikowego o nazwie zdefiniowanej przez "ValuesFile".
+* Dopuszczalne wartości parametru to "matrix" i "vector".
+
+format	vector
+
+* Gdy symulowane odprężanie jest przeprowadzane wielokrotnie
+* dla różnych początkowych podziałów grafu, w pliku ResultsFile
+* zapisywane są minimalne wartości funkcji celu uzyskane
+* w każdym przebiegu algorytmu.
+
+ResultsFile	costs.txt
+
+* Temperatura początkowa
+
+T	1.5
+
+* "Stała czasowa" zmian temperatury.
+
+a	0.9
+
+* Liczba uruchomień symulowanego odprężania.
+* Za każdym razem losowany jest nowy początkowy podział zbioru
+* wierzchołków grafu. Wyjątkiem jest przypadek p = 1.
+* Wtedy zbiór ten jest dzielony na podzbiory
+* wierzchołków o indeksach parzystych i nieparzystych
+
+p	1
+
+* Liczba zmian temperatury
+
+N  200
+
+* Liczba prób (!) zamiany wierzchołków przy stałej temperaturze
+
+s	50

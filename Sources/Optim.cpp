@@ -46,7 +46,11 @@ double cool2(double Tstart, double Tstop, int i, int N) {
 // ZWRACANA TEMPERATURA POWINNA BYĆ DODATNIA.
 // LISTA ARGUMENTÓW MOŻE BYĆ OCZYWIŚCIE ZMODYFIKOWANA.
 double cool3(double Tstart, double Tstop, int i, int N) {
-	return 1e-10;
+	return (Tstart * pow(0.5, i));
+}
+
+double cool4() {
+  return 0;
 }
 
 // Dokonuje dwupodziału grafu za pomocą symulowanego odprężania.
@@ -111,9 +115,10 @@ int Anneal(Graph& graph, const Config& conf, RNG& randomGenerator, std::ofstream
 		}
 		// Zmniejszamy temperaturę zgodnie ze scenariuszem zdefiniowanym w funkcji cool().
 		// Warto poeksperymentować z własnymi "scenariuszami schładzania".
-		// T = cool(T, a);
-    // T = cool2(T, 1e-10, i, N);
-    T = cool3(0,0,0,0);
+		T = cool(T, a);
+    // T = cool2(T, 0, i, N);
+    // T = cool3(T, 0, i, N);
+    // T = cool4();
 
 		if (conf.format_is_matrix())
 			outfile << "\n";

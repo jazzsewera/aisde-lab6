@@ -20,7 +20,7 @@
 #include <climits>
 
 const int STDDEV = 100;
-const int SEED   = 1234;	// TU WPISUJEMY NUMER ALBUMU
+const int SEED   = 300499;	// TU WPISUJEMY NUMER ALBUMU
 
 
 class Edge {

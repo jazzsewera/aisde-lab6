@@ -1,5 +1,6 @@
 *.csv
 *.txt
+!config.txt
 graphgen
 optim
 Objects/*
