@@ -4,3 +4,5 @@ graphgen
 optim
 Objects/*
 !Objects/.gitkeep
+out/*
+!out/.gitkeep
