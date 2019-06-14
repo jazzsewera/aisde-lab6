@@ -1,0 +1,6 @@
+*.csv
+*.txt
+graphgen
+optim
+Objects/*
+!Objects/.gitkeep
