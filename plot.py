@@ -16,7 +16,7 @@ def save_plot(ax, name='plot', const_temp=False):
         ax.set_xscale('log')
         plt.xlabel('Temperature')
     else:
-        plt.xlabel('Algorithm pass no. (const. temp.)')
+        plt.xlabel('Algorithm pass no.')
     dt = datetime.now().strftime('%H-%M-%S')
     plt.ylabel('Cost')
     plt.savefig('out/{0}_{1}.pdf'.format(name, dt))
